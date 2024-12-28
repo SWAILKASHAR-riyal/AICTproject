@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   background-image: url(https://pk.sapphireonline.pk/cdn/shop/files/unstitched-slider-banner_f5acaefd-3abc-4b64-bd61-4baa09f9bc44.jpg?v=1733740033&width=2000);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: papayawhip;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: chocolate !important;
+}
+
+.nav-link.active {
+    color: chocolate !important;
+    font-weight: bold;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-icons i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-icons i:hover {
+    color: chocolate;
+}
+
+/* Contact Container */
+.contact-container {
+    padding: 60px 0;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.contact-info h2 {
+    color: chocolate;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: chocolate;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: papayawhip;
+    color: chocolate;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: chocolate;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    color: chocolate;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 2px solid #eee;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: chocolate;
+    box-shadow: none;
+}
+
+.submit-btn {
+    background-color: chocolate;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #d2691e;
+    transform: translateY(-2px);
+}
+
+/* Store Hours Styles */
+.store-hours {
+    background-color: papayawhip;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.store-hours h2 {
+    color: chocolate;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hours-grid {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-item:last-child {
+    border-bottom: none;
+}
+
+.hours-item span {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: papayawhip;
+    border-bottom: none;
+}
+
+.modal-title {
+    color: chocolate;
+}
+
+.btn-secondary {
+    background-color: chocolate;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #d2691e;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-info {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 30px 0;
+    }
+    
+    .contact-info, .contact-form {
+        padding: 20px;
+    }
+    
+    .store-hours {
+        padding: 30px 0;
+    }
+    
+    .hours-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hours-item span:first-child {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+    
+    .contact-form h2, .contact-info h2, .store-hours h2 {
+        font-size: 24px;
+    }
+}
+
+h2 
+{
+    color: chocolate;
+}
+#sect2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.border {
+    border-top: 2px solid black;
+    width: 70px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#purpose-text {
+    background-color: papayawhip;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 3rem;
+    border-radius: 5px;
+    width: calc(100% - 300px);
+    margin: auto;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 5px black;
+}
+

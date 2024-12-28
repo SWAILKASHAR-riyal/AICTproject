@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KMS Studio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="menu-bar">
+        <h1 class="logo"><a href="project1.html"></a>KMS Studio</h1>
+        
+        <div class="nav-center">
+            <ul>
+                <li><a href="enter.html">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Men <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="mensclothes.html">Men's Clothing</a></li>
+                            <li><a href="menshoes.html">Men's Footware</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Women <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="womenclothes.html">Women's Clothing</a></li>
+                            <li><a href="womenshoes.html">Women's Footware</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Purpose Section -->
+    <div id="sect2">
+        <div class="border"></div>
+        <h2>Contact Us </h2>
+        <div id="purpose-text">
+            <p>We’d love to hear from you! Whether you have a project in mind, need more information about our services, or simply want to connect, feel free to reach out to us.</p>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Fashion Street, Style District<br>Islamabad</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+92 332-9980333</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>support@kmsstudio.com</p>
+                                <p>info@kmsstudio.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form id="feedbackForm" onsubmit="return submitForm(event)">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="product">Men's Clothes</option>
+                                    <option value="order">Women's Clothes</option>
+                                    <option value="return">Men's Footware</option>
+                                    <option value="feedback">Women's Footware</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store Hours -->
+    <div class="store-hours">
+        <div class="container">
+            <h2>Store Hours</h2>
+            <div class="hours-grid">
+                <div class="hours-item">
+                    <span>Monday - Friday</span>
+                    <span>10:00 AM - 9:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span>Saturday</span>
+                    <span>10:00 AM - 8:00 PM</span>
+                </div>
+                <div class="hours-item">
+                    <span>Sunday</span>
+                    <span>11:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Your message has been sent successfully. We'll get back to you soon!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var modal = new bootstrap.Modal(document.getElementById('successModal'));
+            modal.show();
+            document.getElementById('feedbackForm').reset();
+            return false;
+        }
+    </script>
+</body>
+</html>
